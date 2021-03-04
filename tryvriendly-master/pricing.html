@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#180136">
+  <meta name="description"
+    content="An immersive virtual environment where startups and entrepreneurs can get personalized education, build professional network entirely in VR.">
+
+  <link rel="shortcut icon" type="image/png" sizes="167x167" href="images/favicon-43-min.png" />
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- OWL CAROUSEL -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./test/test.css" />
+  <title>Vriendly</title>
+</head>
+
+<body>
+
+  <!-- LOADING STARTS-->
+  <div class="wrapper">
+    <div class="loader">
+    </div>
+    <img src="images/dls-circle-text-44-min.png" alt="Discover, Learn, Socialize.">
+    <img src="images/dls-pattern-min.png" alt="pattern">
+    <img src="images/dls-pattern-min.png" alt="pattern">
+  </div>
+  <!-- LOADING ENDS-->
+
+<!-- HEADER START -->
+<div class="header-bg">
+    <img src="images/header-bg-01-min.png" alt="header background image"/>
+</div>
+
+<header>
+  <div class="logo">
+      <a href="#main"><img src="./images/logo-old-02-min.png" alt="Vriendly logo" /></a>
+  </div>
+
+  <!-- NAVIGATION FOR BIG SCREENS START -->
+  <nav class="big-screen">
+      <ul>
+          <li class="our-company">
+              <p><span>Our Company</span></p>
+              <div class="items">
+                  <a class="about-us" href="index.html"><span>Our Story</span></a>
+                  <a href="index.html"><span> Advantages</span></a>
+                  <a href="index.html"><span> Team</span></a>
+                  <a href="index.html"><span> Partners</span></a>
+
+              </div>
+          </li>
+          <li class="what-we-do">
+              <p><span>What We Do</span></p>
+              <div class="items">
+                  <!-- <a href="#how-it-works"><span>How It Works</span></a> -->
+                  <a href="index.html"><span>Milestones</span></a>
+                  <a href="index.html"><span>Customers</span></a>
+                  <a href="index.html"><span> Video</span></a>
+              </div>
+          </li>
+          <!-- <li class="who-we-are">
+          <p><span>Pricing</span></p>
+          <div class="items">
+              <a href="index.html"><span> Subscription</span></a>
+              <a href="index.html"><span>Single event</span></a>
+          </div>
+      </li> -->
+          <li style="display: none" class="order-vriendly">
+              <p><span>Order Vriendly</span></p>
+              <div class="items">
+                  <a href="register.html"><span>Registration</span></a>
+              </div>
+          </li>
+          <li class="upcoming"><a href="pricing.html"><span>Pricing</span></a></li>
+          <li class="sign-up-for-beta"><a href="./sign-for-beta.html"><span>Sign up for Beta</span></a></li>
+
+      </ul>
+  </nav>
+
+  <!-- <div class="sound-lang-wrapper">
+  <div class="sound">
+      <img src="./images/sound-on-icon-min.png" alt="Sound volume icon"/>
+  </div>
+
+  <div class="lang-container">
+      <div class="languages">
+          <p>EN</p>
+          <p>RU</p>
+          <p>AZ</p>
+      </div>
+      <img class="down-arrow" src="./images/down-arrow-01-min.png" alt="down arrow"/>
+
+  </div>
+</div> -->
+  <!-- NAVIGATION FOR BIG SCREENS END -->
+
+  <!-- NAVIGATION FOR SMALL SCREENS START -->
+
+  <nav class="small-screen">
+      <ul>
+          <li class="our-company" id="ourcompany">
+              <a href="index.html"><span>Our Company<img src="./images/down-arrow-01-min.png"
+                          alt="right arrow"></span></a>
+              <div class="items">
+                  <a href="index.html"><span>Our Story</span></a>
+                  <a href="index.html"><span> Advantages</span></a>
+                  <a href="index.html"><span> Team</span></a>
+                  <a href="index.html"><span> Partners</span></a>
+
+              </div>
+          </li>
+
+          <li class="what-we-do" id="whatwedo">
+              <a href="index.html"><span>What We Do<img src="./images/down-arrow-01-min.png"
+                          alt="right arrow"></span></a>
+              <div class="items">
+                  <!-- <a href="#how-it-works"><span>How It Works</span></a> -->
+                  <a href="index.html"><span>Milestones/span></a>
+                  <a href="index.html"><span> Customers</span></a>
+                  <a href="index.html"><span>Video</span></a>
+              </div>
+          </li>
+          <!-- <li class="who-we-are" id="whoweare">
+      <a href="index.html"><span>Pricing<img src="./images/down-arrow-01-min.png" alt="right arrow"></span></a>
+      <div class="items">
+          <a href="index.html"><span> Subscription</span></a>
+          <a href="index.html"><span>Single event</span></a>
+      </div>
+  </li> -->
+          <li class="upcoming"><a href="pricing.html"><span>Pricing</span></a></li>
+          <li class="sign-up-for-beta"><a href="sign-for-beta.html"><span>Sign up for Beta</span></a></li>
+
+      </ul>
+  </nav>
+
+  <div class="nav-button">
+      <span class="nav-icon"></span>
+  </div>
+
+  <img class="pattern-sm-screen" src="./images/about-us/pattern-about-us-02-min.png" alt="pattern">
+  <!-- NAVIGATION FOR SMALL SCREENS END -->
+
+  <div class="header-cta-button">
+
+      <a href="login.html" class="svg-button">
+          <svg>
+              <rect x="0" y="0" fill="none" width="100%" height="100%" />
+          </svg>
+          Try Vriendly
+      </a>
+
+  </div>
+</header>
+
+
+
+
+  <!-- MAIN START -->
+  <main id="main">
+    <div class="bg-image">
+      <div class="register-container">
+        
+        <div class="container" >
+          <ul class="nav nav-tabs nav-justified hg-tabs" role="tablist">
+            <!-- <li class="nav-item" id="monthly" onclick="changeBackgroundMonthly();">
+      <a class="nav-link " href="#profile"  role="tab" data-toggle="tab" >Monthly</a>
+    </li> -->
+            <li class="nav-item" id="monthly" onclick="changeBackgroundMonthly();">
+              <a class=" pricing-item"   href="#profile" role="tab" data-toggle="tab">Monthly</a>
+            </li>
+            <li class="nav-item " id="annual" onclick="changeBackgroundAnnual();">
+              <a class=" pricing-item"  href="#buzz" role="tab" data-toggle="tab">Annual</a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane in active" id="profile">
+              <div class="row text-center align-items-end">
+                <!-- Pricing Table-->
+                <div class="col-md-4 mb-5 mb-lg-0 ">
+                  <div class="p-5 rounded-lg shadow">
+                    <h1 class="h6 text-uppercase font-weight-bold mb-4">Basic</h1>
+                    <p class="pricing-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                      perspiciatis?</p>
+                    <h2 class="h1 font-weight-bold">$23.99<span class="text-small font-weight-normal ml-2"> per
+                        month</span></h2>
+
+                    <div class="custom-separator my-4 mx-auto bg-primary"></div>
+
+                    <ul class="list-unstyled my-5 text-small ">
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> Lorem ipsum dolor sit amet
+                      </li>
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis
+                      </li>
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus
+                      </li>
+
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus
+                      </li>
+
+                    </ul>
+                    <div class="form-group">
+                      <label for="points">Person</label>
+                      <input type="number" id="points"  class="form-control" name="points" step="1" min="0" max="20">
+                    </div>
+                    <input class="subscribe-submit" value="Subscribe now" type="submit">
+
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5 mb-lg-0 ">
+                  <div class=" p-5 rounded-lg shadow">
+                    <h1 class="h6 text-uppercase font-weight-bold mb-4">Pro</h1>
+                    <p class="pricing-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                      perspiciatis?</p>
+                    <h2 class="h1 font-weight-bold">$29.99<span class="text-small font-weight-normal ml-2"> per
+                        month</span></h2>
+
+                    <div class="custom-separator my-4 mx-auto bg-primary"></div>
+
+                    <ul class="list-unstyled my-5 text-small ">
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> Lorem ipsum dolor sit amet
+                      </li>
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis
+                      </li>
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus
+                      </li>
+
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus
+                      </li>
+
+                    </ul>
+                    <div class="form-group">
+                      <label for="points">Person</label>
+                      <input type="number" id="points"  class="form-control" name="points" step="1" min="20" max="100">
+                    </div>
+                    <input class="subscribe-submit" value="Subscribe now" type="submit">
+
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5 mb-lg-0 ">
+                  <div class=" p-5 rounded-lg shadow">
+                    <h1 class="h6 text-uppercase font-weight-bold mb-4">Enterprise</h1>
+                    <p class="pricing-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                      perspiciatis?</p>
+                    <h2 class="h1 font-weight-bold">Talk to sales!<span class="text-small font-weight-normal ml-2"> per
+                        month</span></h2>
+
+                    <div class="custom-separator my-4 mx-auto bg-primary"></div>
+
+                    <ul class="list-unstyled my-5 text-small ">
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> Lorem ipsum dolor sit amet
+                      </li>
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis
+                      </li>
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus
+                      </li>
+
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus
+                      </li>
+
+                    </ul>
+                    <div class="form-group">
+                      <label for="points">Person</label>
+                      <input type="number" id="points"  class="form-control" name="points" step="1" min="0" max="10000">
+                    </div>
+                    <input class="subscribe-submit" value="Subscribe now" type="submit">
+
+                  </div>
+                </div>
+                
+
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="buzz">
+              <div class="row text-center align-items-end">
+                <!-- Pricing Table-->
+                <div class="col-md-4 mb-5 mb-lg-0 text-center">
+                  <div class="p-5 rounded-lg shadow">
+                    <h1 class="h6 text-uppercase font-weight-bold mb-4">Basic</h1>
+                    <p class="pricing-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                      perspiciatis?</p>
+                    <h2 class="h1 font-weight-bold">$20.99<span class="text-small font-weight-normal ml-2"> per
+                        month</span></h2>
+
+                    <div class="custom-separator my-4 mx-auto bg-primary"></div>
+
+                    <ul class="list-unstyled my-5 text-small ">
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> Lorem ipsum dolor sit amet
+                      </li>
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis
+                      </li>
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus
+                      </li>
+
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus
+                      </li>
+
+                    </ul>
+                    <div class="form-group">
+                      <label for="points">Person</label>
+                      <input type="number" id="points"  class="form-control" name="points" step="1" min="0" max="10000">
+                    </div>
+                    <input class="subscribe-submit" value="Subscribe now" type="submit">
+
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5 mb-lg-0 ">
+                  <div class=" p-5 rounded-lg shadow">
+                    <h1 class="h6 text-uppercase font-weight-bold mb-4">Pro</h1>
+                    <p class="pricing-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                      perspiciatis?</p>
+                    <h2 class="h1 font-weight-bold">$26.59<span class="text-small font-weight-normal ml-2"> per
+                        month</span></h2>
+
+                    <div class="custom-separator my-4 mx-auto bg-primary"></div>
+
+                    <ul class="list-unstyled my-5 text-small ">
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> Lorem ipsum dolor sit amet
+                      </li>
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis
+                      </li>
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus
+                      </li>
+
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus
+                      </li>
+
+                    </ul>
+                    <div class="form-group">
+                      <label for="points">Person</label>
+                      <input type="number" id="points"  class="form-control" name="points" step="1" min="0" max="10000">
+                    </div>
+                    <input class="subscribe-submit" value="Subscribe now" type="submit">
+
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5 mb-lg-0 ">
+                  <div class=" p-5 rounded-lg shadow">
+                    <h1 class="h6 text-uppercase font-weight-bold mb-4">Enterprise</h1>
+                    <p class="pricing-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                      perspiciatis?</p>
+                    <h2 class="h1 font-weight-bold">Talk to sales!<span class="text-small font-weight-normal ml-2"> </span></h2>
+
+                    <div class="custom-separator my-4 mx-auto bg-primary"></div>
+
+                    <ul class="list-unstyled my-5 text-small ">
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> Lorem ipsum dolor sit amet
+                      </li>
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis
+                      </li>
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus
+                      </li>
+
+                      <li class="mb-3">
+                        <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus
+                      </li>
+
+                    </ul>
+                    <div class="form-group">
+                      <label for="points">Person</label>
+                      <input type="number" id="points"  class="form-control" name="points" step="1" min="0" max="10000">
+                    </div>
+                    <input class="subscribe-submit" value="Subscribe now" type="submit">
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- MAIN END -->
+
+ <!-- FOOTER START -->
+<footer id="contact-us">
+    <div class="footer-big-screen">
+        <div class="upper">
+            <div class="our-company">
+                <h2>Our Company</h2>
+                <div class="items">
+                    <a rel="noreferrer" href="index.html"><span>About Us</span></a>
+                    <a rel="noreferrer" href="index.html"><span>Competitive Advantages</span></a>
+                    <a rel="noreferrer" href="index.html"><span>Team</span></a>
+                    <a rel="noreferrer" href="index.html"><span>Partners</span></a>
+
+                </div>
+            </div>
+            <div class="what-we-do">
+                <h2>What We Do</h2>
+                <div class="items">
+                    <a rel="noreferrer" href="index.html"><span>Milestones</span></a>
+                    <a rel="noreferrer" href="index.html"><span>Customers</span></a>
+                    <a rel="noreferrer" href="index.html"><span> Video</span></a>
+                </div>
+            </div>
+            <div class="who-we-are">
+                <h2>Pricing and Sign for Beta</h2>
+                <div class="items">
+                    <a rel="noreferrer" href="index.html"><span>Pricing</span></a>
+                    <a rel="noreferrer" href="index.html"><span>Sign up for Beta</span></a>
+                </div>
+            </div>
+            <div class="contact-us">
+                <h2>Contact Us</h2>
+                <div class="items">
+                    <a rel="noreferrer" id="mail-to" href="mailto:info@vriendly.co">
+                        <p>info@vriendly.co</p>
+                    </a>
+<!--                    <p id="phone">+16174190727</p>-->
+                    <div class="links">
+                        <a rel="noreferrer" href="https://www.linkedin.com/company/vriendly1/" target="_blank"><img
+                                src="images/footer/linkedin-footer-min.png"
+                                alt="linkedin"></a>
+                        <a rel="noreferrer" href="https://twitter.com/VriendlyXR" target="_blank"><img
+                                src="images/footer/twitter-footer-min.png" alt="twitter"></a>
+                        <a rel="noreferrer" href="https://www.facebook.com/vriendlyxr/" target="_blank"><img
+                                src="images/footer/facebook-footer-min.png" alt="facebook"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lower">
+            <div class="copyright">
+                <p>&copy; Copyright 2020, Vriendly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER FOR SMALL SCREENS -->
+    <div class="footer-sm-screen">
+
+        <div class="our-company">
+            <a rel="noreferrer" href="index.html"><span>About Us</span></a>
+            <a rel="noreferrer" href="index.html"><span>Competitive Advantages</span></a>
+            <a rel="noreferrer" href="index.html"><span>Team</span></a>
+                <a rel="noreferrer" href="index.html"><span>Partners</span></a>
+
+        </div>
+        <div class="what-we-do">
+            <!-- <a href="#how-it-works"><span>How It Works</span></a> -->
+            <a rel="noreferrer" href="index.html"><span>Milestones</span></a>
+            <a rel="noreferrer" href="index.html"><span>Customers</span></a>
+            <a rel="noreferrer" href="index.html"><span>Demo Video</span></a>
+        </div>
+        <div class="who-we-are">
+            <a rel="noreferrer" href="index.html"><span>Pricing</span></a>
+            <a rel="noreferrer" href="index.html"><span>Sign up for Beta</span></a>
+        </div>
+        <div class="contact-us">
+            <a rel="noreferrer" href="mailto:info@vriendly.co">
+                <p>info@vriendly.co</p>
+            </a>
+            <div class="links">
+                <a rel="noreferrer" href="https://www.linkedin.com/company/vriendly1/" target="_blank"><img
+                        src="images/footer/linkedin-footer-min.png"
+                        alt="linkedin"></a>
+                <a rel="noreferrer" href="https://twitter.com/VriendlyXR" target="_blank"><img
+                        src="images/footer/twitter-footer-min.png" alt="twitter"></a>
+                <a rel="noreferrer" href="https://www.facebook.com/vriendlyxr/" target="_blank"><img
+                        src="images/footer/facebook-footer-min.png" alt="facebook"></a>
+            </div>
+        </div>
+
+       
+        <div class="phone">
+<!--            <p>+16174190727</p>-->
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Copyright 2020, Vriendly.</p>
+        </div>
+    </div>
+
+</footer>
+<!-- FOOTER END -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(".bpm-minus, .bpm-plus").click(function() {
+if($(this).hasClass("bpm-minus"))
+  $(".bpm-input").val(parseInt($(".bpm-input").val(), 10) - 1 );
+else
+  $(".bpm-input").val(parseInt($(".bpm-input").val(), 10) + 1 );
+});
+     function changeBackgroundMonthly() {
+    //   document.getElementById("price-section").style.backgroundImage = "url('./images/left.png') ";
+
+     document.getElementById("monthly").style.backgroundImage = "url('./images/noname.png')";
+     document.getElementById('annual').style.backgroundImage="none";
+
+     }
+     function changeBackgroundAnnual() {
+    //   document.getElementById("price-section").style.backgroundImage = "url('./images/right.png') ";
+
+     document.getElementById('annual').style.backgroundImage="url('./images/noname.png')";
+     document.getElementById("monthly").style.backgroundImage = "none";
+
+     }
+
+  </script>
+  <div class="tracker"></div>
+
+  <script src="./test/test.js"></script>
+
+  <!-- animations on scroll -->
+  <script src="upcoming/upcoming-animation.js"></script>
+  <!--<script src="/js/animations.js"></script>-->
+
+
+</body>
+
+</html>

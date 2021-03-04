@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--    register your session
+        dilleri silmek
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#180136">
+    <meta name="description"
+        content="An immersive virtual environment where startups and entrepreneurs can get personalized education, build professional network entirely in VR.">
+
+    <link rel="shortcut icon" type="image/png" sizes="167x167" href="./images/favicon-43-min.png" />
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600i,700&display=swap" rel="stylesheet">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+<!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- BOOTSTRAP -->
+    <title>Vriendly</title>
+    <style>
+ 
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#edit{
+    border:1px solid white;
+    border-bottom: none;
+    }
+#logout{
+    border:1px solid white;
+    border-top: none;
+}
+hr{ padding-left: 5px !important;
+    padding-right: 5px !important;
+    margin: 0;
+    width: 120px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    position: relative;
+    left: 12px;
+}
+ 
+
+    </style>
+</head>
+
+<body>
+
+    <!-- LOADING STARTS-->
+    <div class="wrapper">
+        <div class="loader">
+        </div>
+        <img src="./images/dls-circle-text-44-min.png" alt="Discover, Learn, Socialize.">
+        <img src="./images/dls-pattern-min.png" alt="pattern">
+        <img src="./images/dls-pattern-min.png" alt="pattern">
+    </div>
+    <!-- LOADING ENDS-->
+
+    <!-- HEADER START -->
+    <div class="header-bg">
+        <img src="./images/header-bg-01-min.png" alt="header background image" />
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="#main"><img src="./images/Group 630.png" alt="Vriendly logo" /></a>
+        </div>
+
+        <!-- NAVIGATION FOR BIG SCREENS START -->
+        <nav class="big-screen">
+            <ul>
+                <li class="our-company">
+                    <p><span>Our Company</span></p>
+                    <div class="items">
+                        <a class="about-us" href="#about-us"><span>Our Story</span></a>
+                        <a href="#competitive-advantages"><span> Advantages</span></a>
+                        <a href="#team"><span> Team</span></a>
+                        <a href="#partners"><span>Partners</span></a>
+
+                    </div>
+                </li>
+                <li class="what-we-do">
+                    <p><span>What We Do</span></p>
+                    <div class="items">
+                        <!-- <a href="#how-it-works"><span>How It Works</span></a> -->
+                        <a href="#roadmap"><span>Milestones</span></a>
+                        <a href="#customers"><span>Customers</span></a>
+                        <a href="#video"><span> Video</span></a>
+                    </div>
+                </li>
+                <!-- <li class="pricing">
+                    <p><span>Pricing</span></p>
+                    <div class="items">
+                        <a href="#subscription"><span>Subscriptions</span></a>
+                        <a href="./single-event.html"><span>Single event</span></a>
+                    </div>
+                </li> -->
+                <li style="display: none" class="order-vriendly">
+                    <p><span>Order Vriendly</span></p>
+                    <div class="items">
+                        <a href="register.html"><span>Registration</span></a>
+                    </div>
+                </li>
+                <li class="upcoming"><a href="pricing.html"><span>Pricing</span></a></li>
+                <li class="sign-up-for-beta"><a href="./sign-for-beta.html"><span>Sign up for Beta</span></a></li>
+
+            </ul>
+        </nav>
+
+        <!-- <div class="sound-lang-wrapper">
+        <div class="sound">
+            <img src="./images/sound-on-icon-min.png" alt="Sound volume icon"/>
+        </div>
+        <div class="lang-container">
+            <div class="languages">
+                <p>EN</p>
+                <p>RU</p>
+                <p>AZ</p>
+            </div>
+            <img class="down-arrow" src="./images/down-arrow-01-min.png" alt="down arrow"/>
+        </div>
+    </div> -->
+        <!-- NAVIGATION FOR BIG SCREENS END -->
+
+        <!-- NAVIGATION FOR SMALL SCREENS START -->
+
+        <nav class="small-screen">
+            <ul>
+                <li class="our-company" id="ourcompany">
+                    <a href="#ourcompany"><span>Our Company<img src="./images/down-arrow-01-min.png"
+                                alt="right arrow"></span></a>
+                    <div class="items">
+                        <a href="#about-us"><span>Our Story</span></a>
+                        <a href="#competitive-advantages"><span> Advantages</span></a>
+                        <a href="#team"><span>Team</span></a>
+                        <a href="#partners"><span>Partners</span></a>
+
+                    </div>
+                </li>
+
+                <li class="what-we-do" id="whatwedo">
+                    <a href="#whatwedo"><span>What We Do<img src="./images/down-arrow-01-min.png"
+                                alt="right arrow"></span></a>
+                    <div class="items">
+                        <!-- <a href="#how-it-works"><span>How It Works</span></a> -->
+                        <a href="#roadmap"><span>Milestones</span></a>
+                        <a href="#customers"><span> Customers</span></a>
+                        <a href="#video"><span>Video</span></a>
+                    </div>
+                </li>
+                <!-- <li class="pricing" id="whoweare">
+                    <a href="#whoweare"><span>Pricing<img src="./images/down-arrow-01-min.png"
+                                alt="right arrow"></span></a>
+                    <div class="items">
+                        <a href="#subscriptions"><span>Subscriptions</span></a>
+                        <a href="#single-event"><span>Single event</span></a>
+                    </div>
+                </li> -->
+                <li class="upcoming"><a href="pricing.html"><span>Pricing</span></a></li>
+                <li class="sign-up-for-beta"><a href="./sign-for-beta.html"><span>Sign up for Beta</span></a></li>
+
+            </ul>
+        </nav>
+
+        <div class="nav-button">
+            <span class="nav-icon"></span>
+        </div>
+
+        <img class="pattern-sm-screen" src="./images/about-us/pattern-about-us-02-min.png" alt="pattern">
+        <!-- NAVIGATION FOR SMALL SCREENS END -->
+
+         <div class="header-cta-button dropdown">
+            <a href="login.html" class="svg-button">
+                <svg>
+                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                </svg>
+                Try Vriendly
+            </a>
+            <div class="dropdown-content">
+            <a id="edit" href="user-profile.html">Edit</a>
+<hr>
+            <a id="logout" href="#">Log Out</a>
+            </div>
+            
+        </div> 
+      
+
+    </header>
+
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main id="main">
+        <div class="bg-image">
+            <img src="./images/bg-with-overlay5-01-min.png" alt="background image" />
+        </div>
+        <!-- HERO SECTION START -->
+        <section id="home">
+
+            <div class="foreground">
+                <h1 class="hero-text">
+                    <!-- <div>
+                  The<span> Virtual</span>
+                </div>
+                <div>
+                  <span>Environment</span>
+                </div>
+                <div>
+                  For<span> Startups</span> And
+                </div>
+                <div>
+                  <span>Entrepreneurs</span>
+                </div> -->
+
+                    <div>
+                        <span>  The Virtual</span> World
+                    </div>
+                    <div>
+                        that reshapes how <span> we </span>  
+                    </div>
+                    <div>
+                        <span>live, interact</span><br> and  <span> learn</span>
+                    </div>
+                </h1>
+                <div class="scroll">
+                    <p>Scroll for more</p>
+                    <img src="./images/scroll-arrow-01-min.png" alt="double down arrow" />
+                </div>
+                <div class="accomplishment">
+                    <p>
+                        We have successfully conducted<br />workshop and one-on-one
+                        session<br />with <span>Adam Draper</span> on September 13th<br />and October 2nd, 2019
+                        respectively.
+                    </p>
+                </div>
+                <div class="home-cta-button">
+                    <a href="try-vriendly.html" class="svg-button">
+                        <svg xmlns="https://www.vriendly.co/try-vriendly.html">
+                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                        </svg>
+                        Try Vriendly Now
+                    </a>
+                    <img src="./images/cta-arrow-min.png" alt="right arrow">
+                </div>
+            </div>
+        </section>
+        <!-- HERO SECTION END -->
+
+        <!-- ABOUT US SECTION START -->
+        <section id="about-us">
+            <!-- FIRST -->
+            <div class="about-us_first">
+                <div class="about-us_pattern">
+                    <img src="./images/about-us/pattern-about-us-02-min.png" alt="pattern" />
+                </div>
+                <div class="about-us_first_text">
+                    <h2>Our story</h2>
+                    <p>
+
+                        We are the early adopters, developers and believers in the new world that is going to be altered
+                        by virtual reality technology and 3D environments that transform how we interact and communicate.
+
+                    </p>
+                    <p>
+                        Each member in the team has a unique life and professional background story that created a perfect sauce to start Vriendly. We believe that the world of organizing events and startups will eventually become one massive multiplayer environment and should be connected to each other in the Metaverse. 
+Your own customized avatars will differ you from the rest and make you unique. <br>
+
+                        “Vriendly” believes that  everyone is unique on its own way!
+
+                    </p>
+                </div>
+                <h1> KNOWLEDGE <br> IMMERSIVE <br /> FUN<br />ACCESSIBILITY<br /></h1>
+            </div>
+
+            <!-- SECOND -->
+            <div class="about-us_second">
+                <div id="circle-text-wrapper">
+                    <!-- <h1 id="circleText">Discover, Learn, Socialize.</h1> -->
+                    <img id="circleText" src="./images/dls-circle-text-44-min.png" alt="Discover, Learn, Socialize.">
+                </div>
+                <div class="row1">
+                    <div class="col1">
+                        <img src="./images/about-us/about-us2-min.png" alt="image" />
+                        <!-- <img src="./images/about-us/gallery-icon-77-min.png" alt="gallery icon" /> -->
+                        <!-- <div class="overlay"></div> -->
+                    </div>
+                    <div class="col2">
+                        <p>
+                            Authentic multi-theme rooms and 3D customized environments with authentic functionality at Vriendly enable you to organize any type of event and make it fun for everyone. We believe that whether it is assigning tasks on a  beautifully designed whiteboard,attending on-city virtual conferences or having party with people you may or may not now, it creates meaningful experience to learn and enjoy.
+</p>
+                        <p>
+                            Spatial audio makes this process extremely human alike and there is no difference between the real world. And this is not the end of what can be experienced. Users can go off the sessions and engage through their customized avatars in the common area which is 24/7 open. They can learn, engage, work and most importantly feel how special one can become.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="col2">
+                        <!-- <p>
+                    </p> -->
+                        <p>
+                            Here at Vriendly, each of you can become your own "Ready Player One" or "Marty McFly" and
+                            build
+                            amazing futuristic experiences with unique tools and try that were inaccessible to the
+                            previous
+                            generation. Whether you own an Oculus Quest, Rift or just using your personal computer you
+                            may
+                            become the “citizen of the new world” at Vriendly. Think creatively and build your own
+                            metaverse!
+                        </p>
+                    </div>
+                    <div class="col1">
+                        <img src="./images/about-us/about-us1-min.png" alt="image" />
+                        <!-- <img src="./images/about-us/gallery-icon-77-min.png" alt="gallery icon" /> -->
+                        <!-- <div class="overlay"></div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT US SECTION END -->
+
+        <!-- FEATURES SECTION START-->
+        <section id="competitive-advantages">
+            <div class="heading">
+                <h2>Competitive Advantages</h2>
+            </div>
+            <div class="features_wrapper">
+                <div class="lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div id="feature-1" class="feature">
+                    <img class="feature-pattern" src="./images/features/feature-pattern-78.png" alt="feature pattern" />
+                    <div class="feature-icon">
+                        <svg id="feature-icon-1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 63.91 55.76">
+                            <defs>
+                                <style>
+                                    .cls-1,
+                                    .cls-2 {
+                                        fill: #180136;
+                                    }
+
+                                    .cls-1,
+                                    .cls-3 {
+                                        stroke: #83e9e6;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .cls-1,
+                                    .cls-2,
+                                    .cls-3 {
+                                        stroke-width: 0.6px;
+                                    }
+
+                                    .cls-2 {
+                                        stroke: #7300fd;
+                                        stroke-linejoin: round;
+                                    }
+
+                                    .cls-3 {
+                                        fill: none;
+                                    }
+                                </style>
+                            </defs>
+                            <path id="feature-1-path-1" class="cls-1"
+                                d="M23.45,31.24H13a1.66,1.66,0,0,1-1.65-1.65V26.24a6.85,6.85,0,0,1,6.85-6.85h0a6.85,6.85,0,0,1,6.85,6.85v3.34A1.65,1.65,0,0,1,23.45,31.24Z" />
+                            <circle id="feature-1-circ-1" class="cls-1" cx="18.17" cy="16.65" r="4.56" />
+                            <path id="feature-1-path-2" class="cls-1"
+                                d="M50.88,43.66H40.47A1.64,1.64,0,0,1,38.83,42l0-3.35a6.85,6.85,0,0,1,6.85-6.85h0a6.84,6.84,0,0,1,6.85,6.85l0,3.34A1.65,1.65,0,0,1,50.88,43.66Z" />
+                            <circle id="feature-1-circ-2" class="cls-1" cx="45.6" cy="29.08" r="4.56" />
+                            <path id="feature-1-path-3" class="cls-2"
+                                d="M33,36l0,0a10.24,10.24,0,0,0-10.47,0l-.05,0V22.15l.05,0a10.24,10.24,0,0,1,10.47,0l0,0Z" />
+                            <path id="feature-1-path-4" class="cls-2"
+                                d="M43.54,36l0,0A10.24,10.24,0,0,0,33,36L33,36V22.15l.05,0a10.24,10.24,0,0,1,10.47,0l0,0Z" />
+                            <line id="feature-1-line-1" class="cls-3" x1="20.63" y1="42.62" x2="20.63" y2="42.62" />
+                            <path id="feature-1-path-5" class="cls-3" d="M30.67,9.08c5,0,12,2,16,7" />
+                            <line id="feature-1-line-2" class="cls-3" x1="46.67" y1="14.08" x2="46.67" y2="16.58" />
+                            <line id="feature-1-line-3" class="cls-3" x1="44.42" y1="16.33" x2="46.92" y2="16.33" />
+                            <path id="feature-1-path-6" class="cls-3" d="M30.92,46.58c-5,0-12-2-16-7" />
+                            <line id="feature-1-line-4" class="cls-3" x1="14.92" y1="41.58" x2="14.92" y2="39.08" />
+                            <line id="feature-1-line-5" class="cls-3" x1="17.17" y1="39.33" x2="14.67" y2="39.33" />
+                        </svg>
+                    </div>
+                    <h3>P2P learning</h3>
+                    <p>
+                        We believe that peer-2-peer education is one of the effective ways to learn by making mistakes
+                        without hesitation. We are born to make mistakes and that what makes human being stronger.
+                    </p>
+                </div>
+                <div id="feature-2" class="feature">
+                    <div class="feature-icon">
+                        <svg id="feature-icon-2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 63.91 55.76">
+                            <defs>
+                                <style>
+                                    .cls-1,
+                                    .cls-3 {
+                                        fill: #180136;
+                                        stroke-miterlimit: 10;
+                                        stroke-width: 0.6px;
+                                    }
+
+                                    .cls-1 {
+                                        stroke: #83e9e6;
+                                    }
+
+                                    .cls-2 {
+                                        fill: #83e9e6;
+                                    }
+
+                                    .cls-3 {
+                                        stroke: #7300fd;
+                                    }
+                                </style>
+                            </defs>
+                            <rect id="feature-2-rect-1" class="cls-1" x="13.54" y="14.13" width="33.94" height="16.25"
+                                rx="2.64" transform="translate(-4.34 7.72) rotate(-13.47)" />
+                            <path id="feature-2-path-1" class="cls-2"
+                                d="M33.49,23.58a2.27,2.27,0,0,0-.42-.9s0,0-.07-.07a3.63,3.63,0,0,0-1.94-.82l-.63-.13a6.67,6.67,0,0,1-1.24-.32,1.27,1.27,0,0,1-.78-.91c-.2-.87.21-1.44,1.26-1.69a3.58,3.58,0,0,1,1.92.15A1.14,1.14,0,0,0,32,19a.38.38,0,0,0,.22-.24.51.51,0,0,0,0-.33c-.06-.25-.42-.43-1.1-.5a4.61,4.61,0,0,0-1.35,0l-.19-.85a1,1,0,0,0-.14-.35c-.08-.07-.19-.08-.37,0a.44.44,0,0,0-.32.2.81.81,0,0,0,0,.41l.21.85a2.37,2.37,0,0,0-1.23.94,2.05,2.05,0,0,0-.19,1.54,2.42,2.42,0,0,0,.45.94,2.12,2.12,0,0,0,.9.61c.19.06.54.15,1.05.26l.82.18.21,0A4.47,4.47,0,0,1,32,23a1.22,1.22,0,0,1,.63.85c.22.89-.23,1.48-1.36,1.76a4.06,4.06,0,0,1-2-.1.72.72,0,0,0-.32,0c-.06,0-.12.09-.18.22s-.07.24,0,.29c0,.24.38.38,1,.47a4.06,4.06,0,0,0,1.24,0l.25,1c0,.21.09.34.15.38a.5.5,0,0,0,.38,0c.17-.05.29-.12.32-.22a1.25,1.25,0,0,0-.05-.41l-.24-1a2.52,2.52,0,0,0,1.43-.95A2,2,0,0,0,33.49,23.58Z" />
+                            <rect id="feature-2-rect-2" class="cls-3" x="12.1" y="22.61" width="36.83" height="22.2"
+                                rx="2.64" />
+                            <path id="feature-2-path-2" class="cls-3"
+                                d="M46.28,44.82H14.74a2.64,2.64,0,0,1-2.64-2.64V28.57H48.92V42.18A2.64,2.64,0,0,1,46.28,44.82Z" />
+                            <rect id="feature-2-rect-3" class="cls-1" x="42.42" y="32.36" width="9.39" height="5.24"
+                                rx="2.12" />
+                        </svg>
+                    </div>
+                    <h3>Affordable budget</h3>
+                    <p>
+                        We put innovation, education and creating new things on top of everything. Vriendly makes you less worried about costs.
+
+                    </p>
+                </div>
+                <div id="feature-3" class="feature">
+                    <img class="feature-pattern" src="./images/features/feature-pattern-78.png" alt="feature pattern" />
+                    <div class="feature-icon">
+                        <svg id="feature-icon-3" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 63.91 55.76">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: none;
+                                    }
+
+                                    .cls-1,
+                                    .cls-2 {
+                                        stroke: #7300fd;
+                                    }
+
+                                    .cls-1,
+                                    .cls-2,
+                                    .cls-3 {
+                                        stroke-miterlimit: 10;
+                                        stroke-width: 0.6px;
+                                    }
+
+                                    .cls-2,
+                                    .cls-3 {
+                                        fill: #180136;
+                                    }
+
+                                    .cls-3 {
+                                        stroke: #83e9e6;
+                                    }
+                                </style>
+                            </defs>
+                            <path id="feature-3-path-1" class="cls-1"
+                                d="M32,20.27V13.89a3.59,3.59,0,0,1,3.59-3.59h.18a3.6,3.6,0,0,1,3.6,3.59v.88a3.58,3.58,0,0,0,3.59,3.59H43a3.59,3.59,0,0,0,3.59-3.59V4.52" />
+                            <circle id="feature-3-circ-1" class="cls-2" cx="31.95" cy="24.41" r="4.14" />
+                            <rect id="feature-3-rect-1" class="cls-3" x="19.42" y="23.85" width="25.06"
+                                height="13.86" />
+                            <rect id="feature-3-rect-2" class="cls-3" x="4.04" y="33.07" width="24.6" height="11.81"
+                                rx="4.79" transform="translate(-25.82 41.88) rotate(-71.2)" />
+                            <rect id="feature-3-rect-3" class="cls-3" x="41.66" y="26.68" width="11.81" height="24.6"
+                                rx="4.79" transform="translate(-10.02 17.41) rotate(-18.8)" />
+                            <circle id="feature-3-circ-2" class="cls-2" cx="18.46" cy="29.29" r="6.4" />
+                            <line id="feature-3-line-1" class="cls-1" x1="18.46" y1="24.97" x2="18.46" y2="27.31" />
+                            <line id="feature-3-line-2" class="cls-1" x1="18.46" y1="31.28" x2="18.46" y2="33.62" />
+                            <line id="feature-3-line-3" class="cls-1" x1="14.14" y1="29.29" x2="16.48" y2="29.29" />
+                            <line id="feature-3-line-4" class="cls-1" x1="20.45" y1="29.29" x2="22.79" y2="29.29" />
+                            <circle id="feature-3-circ-3" class="cls-2" cx="45.44" cy="29.29" r="6.4" />
+                            <circle id="feature-3-circ-4" class="cls-2" cx="45.44" cy="25.87" r="1.46" />
+                            <circle id="feature-3-circ-5" class="cls-2" cx="45.44" cy="32.44" r="1.46" />
+                            <circle id="feature-3-circ-6" class="cls-2" cx="42.16" cy="29.15" r="1.46" />
+                            <circle id="feature-3-circ-7" class="cls-2" cx="48.73" cy="29.15" r="1.46" />
+                            <circle id="feature-3-circ-8" class="cls-3" cx="39.3" cy="34.73" r="4.14" />
+                            <circle id="feature-3-circ-9" class="cls-3" cx="24.61" cy="34.73" r="4.14" />
+                        </svg>
+                    </div>
+                    <h3>Entertainment</h3>
+                    <p>
+                        Whether it is space travel, team meetings or playing games with friends, Vriendly has everything
+                        you
+                        need to feel relaxed.
+                    </p>
+                </div>
+                <div id="feature-4" class="feature">
+                    <div class="feature-icon">
+                        <svg id="feature-icon-4" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 63.91 55.76">
+                            <defs>
+                                <style>
+                                    .cls-1,
+                                    .cls-3 {
+                                        fill: #180136;
+                                    }
+
+                                    .cls-1,
+                                    .cls-2 {
+                                        stroke: #83e9e6;
+                                    }
+
+                                    .cls-1,
+                                    .cls-2,
+                                    .cls-3 {
+                                        stroke-miterlimit: 10;
+                                        stroke-width: 0.6px;
+                                    }
+
+                                    .cls-2 {
+                                        fill: none;
+                                    }
+
+                                    .cls-3 {
+                                        stroke: #7300fd;
+                                    }
+                                </style>
+                            </defs>
+                            <rect id="feature-4-rect-1" class="cls-1" x="30.57" y="33.61" width="4.62" height="5.55" />
+                            <path id="feature-4-path-1" class="cls-1"
+                                d="M28.35,39.16h9.06a3,3,0,0,1,3,3v0a0,0,0,0,1,0,0h-15a0,0,0,0,1,0,0v0A3,3,0,0,1,28.35,39.16Z" />
+                            <rect id="feature-4-rect-2" class="cls-1" x="16.14" y="11.05" width="33.47" height="22.93"
+                                rx="3.5" />
+                            <line id="feature-4-line-1" class="cls-2" x1="49.61" y1="28.43" x2="15.96" y2="28.43" />
+                            <line id="feature-4-line-2" class="cls-2" x1="30.01" y1="31.02" x2="35.93" y2="31.02" />
+                            <rect id="feature-4-rect-3" class="cls-3" x="12.63" y="25.85" width="14.43" height="18.86"
+                                rx="2.45" />
+                            <line id="feature-4-line-3" class="cls-3" x1="27.24" y1="41.01" x2="12.45" y2="41.01" />
+                            <line id="feature-4-line-4" class="cls-3" x1="18.73" y1="42.86" x2="21.02" y2="42.86" />
+                            <rect id="feature-4-rect-4" class="cls-3" x="44.43" y="31.39" width="7.03" height="13.31"
+                                rx="1.33" />
+                            <line id="feature-4-line-5" class="cls-3" x1="51.46" y1="42.49" x2="44.43" y2="42.49" />
+                            <line id="feature-4-line-6" class="cls-3" x1="47.28" y1="43.6" x2="48.66" y2="43.6" />
+                        </svg>
+                    </div>
+                    <h3>Device agnostic</h3>
+                    <p>
+                        We believe in no limitations. Use your device or VR headset to explore Vriendly and create your
+                        own
+                        experience.
+                    </p>
+                </div>
+                <div id="feature-5" class="feature">
+                    <img class="feature-pattern" src="./images/features/feature-pattern-78.png" alt="feature pattern" />
+                    <div class="feature-icon">
+                        <svg id="feature-icon-5" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 63.91 55.76">
+                            <defs>
+                                <style>
+                                    .cls-1,
+                                    .cls-2 {
+                                        fill: none;
+                                        stroke-miterlimit: 10;
+                                        stroke-width: 0.6px;
+                                    }
+
+                                    .cls-1 {
+                                        stroke: #83e9e6;
+                                    }
+
+                                    .cls-2 {
+                                        stroke: #7300fd;
+                                    }
+                                </style>
+                            </defs>
+                            <circle id="feature-5-circ-1" class="cls-1" cx="31.97" cy="27.89" r="15.61" />
+                            <ellipse id="feature-5-ellipse-1" class="cls-1" cx="31.97" cy="27.89" rx="6.37"
+                                ry="15.61" />
+                            <polyline id="feature-5-polyline-1" class="cls-1"
+                                points="19.18 18.92 26.75 18.92 37.18 18.92 44.75 18.92" />
+                            <polyline id="feature-5-polyline-2" class="cls-1"
+                                points="16.35 27.89 25.6 27.89 38.33 27.89 47.58 27.89" />
+                            <polyline id="feature-5-polyline-3" class="cls-1"
+                                points="19.19 36.86 26.75 36.86 37.18 36.86 44.74 36.86" />
+                            <path id="feature-5-path-1" class="cls-2"
+                                d="M46.27,34.09c4,5.38,5.8,9.76,4.29,11.36-2.46,2.6-12.79-3.14-23.07-12.85S10.89,12.91,13.35,10.31c1.51-1.6,6,0,11.6,3.64" />
+                        </svg>
+                    </div>
+                    <h3>Accessibility</h3>
+                    <p>
+                        There are thousands of like-minded people globally. Engage, create and share experiences on your
+                        own
+                        metaverse.
+                    </p>
+                </div>
+                <div id="feature-6" class="feature">
+                    <div class="feature-icon">
+                        <svg id="feature-icon-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 63.91 55.76">
+                            <defs>
+                                <style>
+                                    .cls-1,
+                                    .cls-2 {
+                                        fill: none;
+                                        stroke-miterlimit: 10;
+                                        stroke-width: 0.6px;
+                                    }
+
+                                    .cls-1 {
+                                        stroke: #83e9e6;
+                                    }
+
+                                    .cls-2 {
+                                        stroke: #7300fd;
+                                    }
+                                </style>
+                            </defs>
+                            <circle id="feature-6-circ-1" class="cls-1" cx="18.97" cy="11.78" r="3.1" />
+                            <path id="feature-6-path-1" class="cls-1"
+                                d="M23.12,26v9.62a1.44,1.44,0,0,1-1.44,1.44h0a1.44,1.44,0,0,1-1.44-1.44v-7.1A1.27,1.27,0,0,0,19,27.27h0a1.27,1.27,0,0,0-1.27,1.27v7.1a1.44,1.44,0,0,1-1.44,1.44h0a1.44,1.44,0,0,1-1.44-1.44V20.54a1.26,1.26,0,0,0-.4-.93L8.4,14.05a1.44,1.44,0,0,1-.07-2l0,0a1.44,1.44,0,0,1,2-.07l5.12,4.79a1.27,1.27,0,0,0,.87.34h5.17a1.29,1.29,0,0,0,.87-.34l5.12-4.79a1.44,1.44,0,0,1,2,.07l0,0a1.44,1.44,0,0,1-.07,2l-6,5.59a1.26,1.26,0,0,0-.4.93v1.48" />
+                            <circle id="feature-6-circ-2" class="cls-1" cx="44.97" cy="11.78" r="3.1" />
+                            <path id="feature-6-path-2" class="cls-1"
+                                d="M40.75,25.69v9.94a1.44,1.44,0,0,0,1.44,1.44h0a1.44,1.44,0,0,0,1.44-1.44V28.54a1.27,1.27,0,0,1,1.27-1.27h0a1.27,1.27,0,0,1,1.27,1.27v7.09a1.43,1.43,0,0,0,1.44,1.44h0a1.43,1.43,0,0,0,1.44-1.44V20.56a1.27,1.27,0,0,1,.41-.93l6-5.58a1.44,1.44,0,0,0,.07-2l0,0a1.44,1.44,0,0,0-2-.07l-5.12,4.79a1.29,1.29,0,0,1-.87.34H42.37a1.27,1.27,0,0,1-.87-.34l-5.12-4.79a1.44,1.44,0,0,0-2,.07l0,0a1.44,1.44,0,0,0,.07,2l6,5.55a1.26,1.26,0,0,1,.4.93v1.22" />
+                            <circle id="feature-6-circ-3" class="cls-2" cx="31.97" cy="21.78" r="3.1" />
+                            <path id="feature-6-path-3" class="cls-2"
+                                d="M36.12,36v9.62a1.44,1.44,0,0,1-1.44,1.44h0a1.44,1.44,0,0,1-1.44-1.44v-7.1A1.27,1.27,0,0,0,32,37.27h0a1.27,1.27,0,0,0-1.27,1.27v7.1a1.44,1.44,0,0,1-1.44,1.44h0a1.44,1.44,0,0,1-1.44-1.44V30.54a1.26,1.26,0,0,0-.4-.93l-6-5.56a1.44,1.44,0,0,1-.07-2l0,0a1.44,1.44,0,0,1,2-.07l5.12,4.79a1.27,1.27,0,0,0,.87.34h5.17a1.29,1.29,0,0,0,.87-.34l5.12-4.79a1.44,1.44,0,0,1,2,.07l0,0a1.44,1.44,0,0,1-.07,2l-6,5.59a1.26,1.26,0,0,0-.4.93V36Z" />
+                        </svg>
+                    </div>
+                    <h3>Zero Social distance</h3>
+                    <p>
+                        Organize any kind of event whether formal or informal and never stop being active and social
+                        even
+                        you if you do not have a startup yet. Vriendly liberates the life of founders.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- FEATURES SECTION END-->
+
+        <!-- ROADMAP SECTION START -->
+        <section id="roadmap">
+            <div class="heading">
+                <h2>Roadmap</h2>
+            </div>
+
+            <div class="milestones-wrapper">
+                <div class="milestone1">
+                    <div class="milestone_graphics">
+                        <div class="rectangle"></div>
+                        <div class="line-right"></div>
+                    </div>
+                    <div class="milestone_texts">
+                        <h3>Idea formation phase</h3>
+                        <p>It all started on April, 2018 with the vision to create the multiplayer environment where users can simulate their real world and enjoy various experiences.</p>
+                    </div>
+                </div>
+
+                <div class="milestone2">
+                    <div class="milestone_graphics">
+                        <div class="rectangle"></div>
+                        <div class="line-left"></div>
+                    </div>
+                    <div class="milestone_texts">
+                        <h3>Customer Validation</h3>
+                        <p>
+                            Talking to customers and validating it, made us to pick a niche that seems ,need it most. It was the result of tens of tests and pilots with the customers.
+
+
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="milestone3">
+                    <div class="milestone_graphics">
+                        <div class="rectangle"></div>
+                        <div class="line-right"></div>
+                    </div>
+                    <div class="milestone_texts">
+                        <h3>MVP development phase</h3>
+                        <p>TIteration and testing became crucial for us that led to designing and developing MVP which was enought to talk to first customers.</p>
+                    </div>
+                </div>
+                <div class="milestone4">
+                    <div class="milestone_graphics">
+                        <div class="rectangle"></div>
+                        <div class="line-left"></div>
+                    </div>
+                    <div class="milestone_texts">
+                        <h3>Closed beta
+                        </h3>
+                        <p>On August 2020, we launched the closed beta with minimal functionalities and with only 2 environments.
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="milestone5">
+                    <div class="milestone_graphics">
+                        <div class="rectangle"></div>
+                        <div class="line-right"></div>
+                    </div>
+                    <div class="milestone_texts">
+                        <h3>Public beta </h3>
+                        <p>Coming soon.</p>                        </p>
+                    </div>
+                </div>
+                    <!-- <div class="milestone6">
+                        <div class="milestone_graphics">
+                            <div class="rectangle"></div>
+                            <div class="line-left"></div>
+                        </div>
+                        <div class="milestone_texts">
+                            <h3>Public beta </h3>
+                        
+                        </div>
+                    </div> -->
+            </div>
+
+            </div>
+
+        </section>
+        <!-- ROADMAP SECTION END -->
+
+        <!-- DLS SECTION START -->
+        <section id="dls">
+            <img src="./images/dls-bg-w-texts2-84-croped-min.png" alt="Discover Learn Socialize" />
+            <img src="./images/dls-pattern-min.png" alt="pattern">
+        </section>
+        <!-- DLS SECTION END -->
+
+        <!-- HAPPY CUSTOMERS SECTION START -->
+        <section id="customers">
+            <div class="heading">
+                <h2>Happy Customers</h2>
+            </div>
+
+            <div id="carousel" class="customers-container owl-carousel">
+                <div class="customer item">
+                    <p>“Vriendly brings new approach to academic learning.”</p>
+                    <p>Fariz Ismayilov</p>
+                    <p>ADA University Vice-Rector</p>
+
+                </div>
+                <div class="customer item">
+                    <p>“Vriendly is very helpful for the whole education system and especially for the people with
+                        physical
+                        disabilities.”</p>
+                    <p>Leman Mammadli</p>
+                    <p>Edumedia Company Project Manager</p>
+
+                </div>
+                <div class="customer item">
+                    <p>“Coding and programming enters to the new wave with Vriendly and its virtual environment for
+                        software
+                        developers.”</p>
+                    <p>Adil Haqverdiyev</p>
+                    <p>Tech Academy Director</p>
+                </div>
+
+            </div>
+        </section>
+        <!-- HAPPY CUSTOMERS SECTION END -->
+
+        <!-- DEMO VIDEO SECTION START  -->
+        <section id="video">
+            <div class="player">
+                <video class="player__video viewer" src="./videos/promovideo.mp4" preload="none"></video>
+                <img src="./images/video-min.png" alt="image">
+                <div class="play-button">
+                    ►
+                </div>
+            </div>
+        </section>
+        <!-- DEMO VIDEO SECTION END  -->
+
+        <!-- GET STARTED SECTION START -->
+        <!-- <section id="get-started"> -->
+        <!-- <div class="heading">
+      <h2>Get Started</h2>
+    </div> -->
+        <!-- <img class="get-st-pattern" src="./images/get-started/get-st-pattern-min.png" alt="pattern"> -->
+        <!-- <div class="get-started_container"> -->
+        <!-- <a href="https://vriendly.fra1.digitaloceanspaces.com/Vriendly.apk">
+      <div class="down-container_oculus">
+        <div class="os-icon-container">
+          <img src="./images/get-started/oculus-min.png" alt="Oculus logo icon">
+        </div>
+        <h3>
+          Download for Oculus Quest &amp; Oculus Go
+        </h3>
+        <div class="down-icon-container">
+          <img src="./images/get-started/oculus-down-min.png" alt="download icon">
+        </div>
+      </div>
+  </a> -->
+
+        <!-- <a href="https://vriendly.fra1.digitaloceanspaces.com/Mac.app.zip">
+      <div class="down-container_mac">
+        <div class="os-icon-container">
+          <img src="./images/get-started/mac-min.png" alt="macOS logo icon">
+        </div>
+        <h3>Download for macOS</h3>
+        <div class="down-icon-container">
+          <img src="./images/get-started/mac-down-min.png" alt="download icon">
+        </div>
+      </div>
+    </a> -->
+
+        <!-- <a href="https://vriendly.fra1.digitaloceanspaces.com/Vriendly.rar">
+      <div class="down-container_windows">
+        <div class="os-icon-container">
+          <img src="./images/get-started/windows-min.png" alt="Windows logo icon">
+        </div>
+            <h3>Download for Windows (64 bit)</h3>
+        <div class="down-icon-container">
+          <img src="./images/get-started/windows-down-min.png" alt="download icon">
+        </div>
+      </div>
+      </a> -->
+        <!-- <a href="#">
+    <div class="down-container_linux">
+      <div class="os-icon-container">
+        <img src="./images/get-started/linux-min.png" alt="Linux logo icon">
+      </div>
+      <h3>Download for Linux</h3>
+      <div class="down-icon-container">
+        <img src="./images/get-started/linux-down-min.png" alt="download icon">
+      </div>
+    </div>
+    </a> -->
+        <!-- </div> -->
+        <!-- </section> -->
+        <!-- GET STARTED SECTION END -->
+
+        <!-- TEAM SECTION START -->
+        <section id="team">
+            <div class="heading">
+                <h2>Our Team</h2>
+            </div>
+
+            <div id="circle-text-wrapper2">
+                <!-- <h1 id="circleText2">Discover, Learn, Socialize.</h1> -->
+                <img id="circleText2" src="./images/dls-circle-text-44-min.png" alt="Discover, Learn, Socialize.">
+            </div>
+            <div class="team-container">
+                <div class="member">
+                    <img src="./images/team/ulvi.png" alt="Ulvi Nasibli" />
+                    <div class="info">
+                        <h3>Ulvi<br />Nasibli</h3>
+                        <p class="major">CEO | Co-Founder</p>
+                        <div class="social-links">
+                            <a rel="noreferrer" href="https://www.linkedin.com/in/ulvi-nasibli-414411122/"
+                                target="_blank"><img src="./images/team/linkedin.png" alt="linkedin"></a>
+                            <a rel="noreferrer" href="https://www.facebook.com/Ulvi.nesibli" target="_blank"><img
+                                    src="./images/team/facebook.png" alt="facebook"></a>
+                            <a rel="noreferrer" href="mailto:ulvi@vriendly.co" target="_blank"><img
+                                    src="./images/team/email.png" alt="email"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/team/kamran.png" alt="Kamran Gurbanly" />
+                    <div class="info">
+                        <h3>Kamran<br />Gurbanly</h3>
+                        <p class="major">CTO | Co-Founder</p>
+                        <div class="social-links">
+                            <a rel="noreferrer" href="https://www.linkedin.com/in/kamran-gurbanly-158a5b74/"
+                                target="_blank"><img src="./images/team/linkedin.png" alt="linkedin"></a>
+                            <a rel="noreferrer" href="https://twitter.com/wilk3ns" target="_blank"><img
+                                    src="./images/team/twitter.png" alt="twitter"></a>
+                            <a rel="noreferrer" href="mailto:kamran@vriendly.co" target="_blank"><img
+                                    src="./images/team/email.png" alt="email"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/team/sominder.png" alt="Sominder Singh">
+                    <div class="info">
+                        <h3>Sominder<br />Singh</h3>
+                        <p class="major">Investor Relations</p>
+                        <div class="social-links">
+                            <a rel="noreferrer" href="https://sominder.com/" target="_blank"><img
+                                    src="./images/team/web.png" alt="website"></a>
+                            <a rel="noreferrer" href="https://www.linkedin.com/m/in/somindersingh"
+                            target="_blank"><img src="./images/team/linkedin.png" alt="linkedin"></a>
+                            <a rel="noreferrer" href="mailto:hello@sominder.com" target="_blank"><img
+                                src="./images/team/email.png" alt="email"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/team/yagub.png" alt="Yagub Mehdiyev">
+                    <div class="info">
+                        <h3>Yagub<br />Mehdiyev</h3>
+                        <p class="major">Creative Director | <br> Co-Founder</p>
+                        <div class="social-links">
+                            <a rel="noreferrer" href="https://cy.linkedin.com/in/yagub-mehdiyev" target="_blank"><img
+                                    src="./images/team/linkedin.png" alt="linkedin"></a>
+                            <a rel="noreferrer" href="https://www.facebook.com/yagub.mehdiyev" target="_blank"><img
+                                    src="./images/team/facebook.png" alt="facebook"></a>
+                            <a rel="noreferrer" href="mailto:yagub@vriendly.co" target="_blank"><img
+                                    src="./images/team/email.png" alt="email"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/team/ruslan.png" alt="Ruslan Gurbanov">
+                    <div class="info">
+                        <h3>Ruslan<br />Gurbanov</h3>
+                        <p class="major">Senior Unity Developer | Co-Founder</p>
+                        <div class="social-links">
+                            <a rel="noreferrer" href="https://www.linkedin.com/in/ruslan-gurbanov-706278104/"
+                                target="_blank"><img src="./images/team/linkedin.png" alt="linkedin"></a>
+                            <a rel="noreferrer" href="https://www.facebook.com/ReaperRG" target="_blank"><img
+                                    src="./images/team/facebook.png" alt="facebook"></a>
+                            <a rel="noreferrer" href="mailto:ruslan@vriendly.co" target="_blank"><img
+                                    src="./images/team/email.png" alt="email"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="member">
+                    <img src="./images/team/nurlan.png" alt="Nurlan Shukurov">
+                    <div class="info">
+                        <h3>Nurlan<br />Shukurov</h3>
+                        <p>Unity Developer</p>
+                        <div class="social-links">
+                            <a rel="noreferrer" href="https://www.linkedin.com/in/shukurov-nurlan/" target="_blank"><img
+                                    src="./images/team/linkedin.png" alt="linkedin"></a>
+                            <a rel="noreferrer" href="https://www.facebook.com/shukurov.nurlan.1991"
+                                target="_blank"><img src="./images/team/facebook.png" alt="facebook"></a>
+                            <a rel="noreferrer" href="mailto:nurlan@vriendly.co" target="_blank"><img
+                                    src="./images/team/email.png" alt="email"></a>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="member">
+                    <img src="./images/team/faiq.jpg" alt="Faiq Rustamov">
+                    <div class="info">
+                        <h3>Faiq<br />Rustamov</h3>
+                        <p class="major">Front-end Developer </p>
+                        <div class="social-links">
+                            <a rel="noreferrer" href="https://www.linkedin.com/in/faiq-rustamov-084449175/" target="_blank"><img
+                                    src="./images/team/linkedin.png" alt="linkedin"></a>
+                            <a rel="noreferrer" href="https://www.facebook.com/profile.php?id=100006333610536" target="_blank"><img
+                                    src="./images/team/facebook.png" alt="facebook"></a>
+                            <a rel="noreferrer" href="mailto:faiqrustam178@gmail.com" target="_blank"><img
+                                    src="./images/team/email.png" alt="email"></a>
+                        </div>
+                    </div>
+                </div>
+           
+            
+             
+            </div>
+        </section>
+        <!-- TEAM SECTION END -->
+
+        <!-- OUR PARTNERS SECTION START -->
+        <section id="partners">
+            <div class="heading">
+                <h2>Our Partners</h2>
+            </div>
+
+            <div class="partners-container owl-carousel" id="carousel2">
+                
+                <div class="partner item">
+                    <a rel="noreferrer" href="http://www.femigrants.org/" target="_blank">
+                        <img src="./images/partners/femigrant-min.png" alt="Femigrant" class="align" />
+                    </a>
+                </div>
+                <div class="partner item">
+                    <a rel="noreferrer" href="#" target="_blank">
+                        <img src="./images/partners/startup-grind.png" alt="Startup Grind" class="align" />
+                    </a>
+                </div>
+                <div class="partner item">
+                    <a rel="noreferrer" href="http://www.femigrants.org/" target="_blank">
+                        <img src="./images/partners/svjc.png" alt="Svjc" class="align" />
+                    </a>
+                </div>
+                
+
+                <div class="partner item">
+                    <a rel="noreferrer" href="https://edumedia.az/" target="_blank">
+                        <img src="./images/partners/edumedia-min.png" alt="Edumedia" class="align" />
+                    </a>
+                </div>
+               
+
+               
+                
+                <!-- <div class="partner item">
+              <a href="http://www.oyu.edu.az/" target="_blank">
+                <img src="./images/partners/oyu-min.png" alt="Odlar Yurdu University" class="align" />
+              </a>
+            </div> -->
+                <div class="partner item">
+                    <a rel="noreferrer" href="https://startupmacedonia.mk/" target="_blank">
+                        <img src="./images/partners/startup-macedonia-min.png" alt="Startup Macedonia" class="align" />
+                    </a>
+                </div>
+              
+
+               
+
+
+            </div>
+            <div class="partners-overlay"></div>
+        </section>
+        <!-- OUR PARTNERS SECTION END -->
+
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <footer id="contact-us">
+        <div class="footer-big-screen">
+            <div class="upper">
+                <div class="our-company">
+                    <h2>Our Company</h2>
+                    <div class="items">
+                        <a rel="noreferrer" href="#about-us"><span>Our Story</span></a>
+                        <a rel="noreferrer" href="#competitive-advantages"><span>Advantages</span></a>
+                        <a rel="noreferrer" href="#team"><span> Team</span></a>
+                        <a rel="noreferrer" href="#partners"><span> Partners</span></a> </div>
+                </div>
+                <div class="what-we-do">
+                    <h2>What We Do</h2>
+                    <div class="items">
+                        <a rel="noreferrer" href="#roadmap"><span>Milestones</span></a>
+                        <a rel="noreferrer" href="#customers"><span>Customers</span></a>
+                        <a rel="noreferrer" href="#video"><span>Video</span></a>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <h2>Beta and Pricing</h2>
+                    <div class="items">
+                        <a rel="noreferrer" href="sign-for-beta.html"><span>Sign up for Beta</span></a>
+                        <a rel="noreferrer" href="upcoming.html"><span>Pricing</span></a>
+
+                    </div>
+                </div>
+              
+                <div class="contact-us">
+                    <h2>Contact Us</h2>
+                    <div class="items">
+                        <a rel="noreferrer" id="mail-to" href="mailto:info@vriendly.co">
+                            <p>info@vriendly.co</p>
+                        </a>
+                        <p id="address"></p>
+                        <!--                    <p id="phone">+16174190727</p>-->
+                        <div class="links">
+                            <a rel="noreferrer" href="https://www.linkedin.com/company/vriendly1/" target="_blank"><img
+                                    src="./images/footer/linkedin-footer-min.png" alt="linkedin"></a>
+                            <a rel="noreferrer" href="https://twitter.com/VriendlyXR" target="_blank"><img
+                                    src="./images/footer/twitter-footer-min.png" alt="twitter"></a>
+                            <a rel="noreferrer" href="https://www.facebook.com/vriendlyxr/" target="_blank"><img
+                                    src="./images/footer/facebook-footer-min.png" alt="facebook"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lower">
+                <div class="copyright">
+                    <p>&copy; Copyright 2021, Vriendly.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER FOR SMALL SCREENS -->
+        <div class="footer-sm-screen">
+
+            <div class="our-company">
+                <a rel="noreferrer" href="#about-us"><span>About Us</span></a>
+                <a rel="noreferrer" href="#competitive-advantages"><span>Advantages</span></a>
+                <a rel="noreferrer" href="#team"><span> Team</span></a>
+                <a rel="noreferrer" href="#partners"><span> Partners</span></a>
+
+
+            </div>
+            <div class="what-we-do">
+                <!-- <a href="#how-it-works"><span>How It Works</span></a> -->
+                <a rel="noreferrer" href="#roadmap"><span>Milestones</span></a>
+                <a rel="noreferrer" href="#customers"><span>Customers</span></a>
+                <a rel="noreferrer" href="#video"><span>Video</span></a>
+            </div>
+
+            <div class="pricing">
+                <a rel="noreferrer" href="sign-for-beta.html"><span>Sign up for Beta</span></a>
+                <a rel="noreferrer" href="pricing.html"><span>Pricing</span></a>
+            </div>
+           
+            <div class="contact-us">
+                <a rel="noreferrer" href="mailto:info@vriendly.co">
+                    <p>info@vriendly.co</p>
+                </a>
+
+                <div class="links">
+                    <a rel="noreferrer" href="https://www.linkedin.com/company/vriendly1/" target="_blank"><img
+                            src="./images/footer/linkedin-footer-min.png" alt="linkedin"></a>
+                    <a rel="noreferrer" href="https://twitter.com/VriendlyXR" target="_blank"><img
+                            src="./images/footer/twitter-footer-min.png" alt="twitter"></a>
+                    <a rel="noreferrer" href="https://www.facebook.com/vriendlyxr/" target="_blank"><img
+                            src="./images/footer/facebook-footer-min.png" alt="facebook"></a>
+                </div>
+            </div>
+
+            
+            <div class="phone">
+                <!--            <p>+16174190727</p>-->
+            </div>
+
+            <div class="copyright">
+                <p>&copy; Copyright 2021, Vriendly.</p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- FOOTER END -->
+
+    <div class="tracker"></div>
+<!-- Bootstrap -->
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <script src="./js/script.js"></script>
+    <!-- <script src="./js/script2.js"></script> -->
+
+    <!-- animations on scroll -->
+    <script src="./js/animations.js"></script>
+    <!-- <script src="./js/animations2.js"></script> -->
+
+    <!-- OWL CAROUSEL -->
+    <script>
+
+        $("#carousel").owlCarousel({
+            autoplay: true,
+            loop: true,
+            margin: 0,
+            drag: false,
+            transitionStyle: "fade",
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            responsiveClass: true,
+            singleItem: true,
+            autoHeight: false,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            smartSpeed: 1000,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1024: {
+                    items: 1
+                },
+                1366: {
+                    items: 1
+                }
+            }
+        });
+        $("#carousel2").owlCarousel({
+            autoplay: true,
+            loop: true,
+            margin: 0,
+            drag: true,
+            responsiveClass: true,
+            singleItem: false,
+            autoHeight: false,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            smartSpeed: 800,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 4
+                },
+                600: {
+                    items: 4
+                },
+                1024: {
+                    items: 5
+                },
+                1366: {
+                    items: 6
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
